@@ -1,5 +1,12 @@
-const sum = require('./game_of_life');
+const Cell = require('./game_of_life');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+// cell has four neightbours:
+//  -  north, south, west, east
+// alive?
+// tick
+
+test('given a live cell with one live neighbour', () => {
+  let cell = new Cell();
+  cell.tick();
+  expect(cell.alive).toBe(false);
 });

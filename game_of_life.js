@@ -1,4 +1,10 @@
-function sum(a, b) {
-  return a + b;
+let Cell = class {
+  constructor() {
+    this.alive = false;
+  }
+
+  tick() {
+  }
 }
-module.exports = sum;
+
+module.exports = Cell;
