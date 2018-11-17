@@ -7,7 +7,7 @@ const Cell = require('./game_of_life');
 //  - tick()
 
 test('given a live cell with one live neighbour', () => {
-  let cell = new Cell(true);
+  let cell = new Cell();
   cell.tick();
   expect(cell.alive).toBe(false);
 });

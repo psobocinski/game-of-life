@@ -1,6 +1,6 @@
 let Cell = class {
-  constructor(alive) {
-    this.alive = alive;
+  constructor() {
+    this.alive = true;
   }
 
   tick() {
