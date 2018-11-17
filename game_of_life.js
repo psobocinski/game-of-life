@@ -1,9 +1,10 @@
 let Cell = class {
-  constructor() {
-    this.alive = false;
+  constructor(alive) {
+    this.alive = alive;
   }
 
   tick() {
+    this.alive = false;
   }
 }
 
