@@ -1,5 +1,11 @@
 {
   "scripts": {
     "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "watch": "^1.0.2"
   }
 }
