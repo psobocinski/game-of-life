@@ -1,6 +1,7 @@
 let Cell = class {
-  constructor() {
+  constructor(args = {}) {
     this.alive = true;
+    this.neighbours = args.neighbours;
   }
 
   tick() {
